@@ -1,0 +1,165 @@
+:global {
+  ul.CodeMirror-hints {
+    z-index: 1200;
+  }
+}
+
+.CodeEditor {
+  :global {
+    span.CodeMirror-FEle {
+      border: solid 1px #1890ff;
+      color: white;
+      border-radius: 4px;
+      background-color: #1890ff;
+      padding: 3px 5px;
+      margin: 0 4px;
+    }
+    span.CodeMirror-FEle2 {
+      border: solid 1px #FB7404;
+      color: white;
+      border-radius: 4px;
+      background-color: #FB7404;
+      padding: 3px 5px;
+      margin: 0 4px;
+    }
+    span .Del-str {
+      border: solid 1px #ccc;
+      color: #fff;
+      border-radius: 4px;
+      background-color: #ccc;
+      padding: 3px 5px;
+      margin: 0 4px;
+    }
+    .CodeMirror {
+      height: 150px !important;
+      .CodeMirror-code {
+        line-height: 1.8;
+      }
+    }
+    .react-codemirror2 {
+      border: solid 1px #dadada;
+      padding: 5px;
+    }
+  }
+}
+
+.editorConainter {
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+  .ModalTip {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    line-height: 304px;
+    z-index: 111;
+    background: rgba(72, 169, 255, 0.1)
+  }
+}
+
+.row {
+  height: 0;
+  flex: 1;
+}
+
+.col {
+  display: flex;
+  height: 100%;
+  padding: 5px;
+  flex-flow: column;
+  .col_title {
+    font-size: 14px;
+    line-height: 35px;
+    border-bottom: solid 1px #e8e8e8;
+    margin-bottom: 5px;
+  }
+
+}
+
+.colWrap {
+  display: flex;
+}
+
+.col_body {
+  overflow: auto;
+  padding-right: 5px;
+  flex: 1;
+  height: 0;
+  .info {
+    font-size: 12px;
+    margin-bottom: 3px;
+  }
+  .funcItem {
+    margin-bottom: 0;
+    cursor: pointer;
+    height: 24px;
+    line-height: 24px;
+    padding-left: 24px;
+    &.on {
+      background: #F3FDFF;
+    }
+  }
+
+}
+
+.card_container {
+  height: 0;
+  flex: 1;
+  :global {
+    .ant-tabs {
+      height: 100%;
+      display: flex;
+      flex-flow: column;
+      .ant-tabs-content.ant-tabs-content-animated.ant-tabs-top-content {
+        flex: 1;
+        height: 0;
+        .ant-tabs-tabpane.ant-tabs-tabpane-active {
+          overflow: auto;
+          padding: 5px;
+        }
+      }
+    }
+    .ant-list-item {
+      cursor: pointer;
+    }
+    .ant-list-item:hover {
+      background-color: #F3FDFF;
+    }
+
+  }
+}
+
+.valueStr {
+  color: #1890ff;
+}
+
+.valueNum {
+  color: #52c41a;
+}
+
+.valueDateTime {
+  color: #F39C12;
+}
+
+.valueArray {
+  color: #A868C4;
+}
+
+.valueBool {
+  color: #FF2801;
+}
+
+.formulaItem {
+  display: flex;
+  width: 100%;
+  > div:first-child {
+    flex: 1;
+  }
+  > div:last-child {
+    width: 60px;
+    text-align: right;
+  }
+}

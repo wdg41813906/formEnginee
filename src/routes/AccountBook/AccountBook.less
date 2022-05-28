@@ -1,0 +1,71 @@
+.opr{
+    margin-left:10px;
+}
+.container{
+    width:100%;
+    height:100%;
+    padding:.7em;
+    .headerContainer{
+        margin-bottom:.7em;
+        .header{
+            display:flex;
+            align-items:center;
+            .headerLeft{
+                flex:1;
+                .proSelect{
+                    color:#798df5;
+                }
+                .search{
+                    &.searchIconActive{
+                        color:#798df5;
+                    }
+                    margin-left:.7em;
+                    background-color:#F5F5F5;
+                    display: inline-block;
+                    line-height: 32px;
+                    padding: 0 15px;
+                    cursor: pointer;
+                    .searchIcon{
+                        margin-right:.3em;
+                    }
+                }
+                .opr
+            }
+            .headerRight{
+                display:flex;
+                flex-direction: row-reverse;
+                align-items:center;
+                .opr
+            }
+        }
+    }
+    .filterContainer{
+        position: relative;
+        display:flex;
+        flex-wrap:wrap;
+        background-color:#F5F5F5;
+        padding:.7em;
+        padding-right:100px;
+        min-height:120px;
+        max-height:120px;
+        overflow-y:auto;
+        .searchBtn{
+            position: absolute;
+            right:.7em;
+            top:50%;
+            transform: translateY(-50%);
+        }
+    }
+}
+.filterItem{
+    width:150px;
+    margin-right:.7em;
+}
+.fixedCont{
+    padding:.7em;
+}
+.custormEdit{
+    display:flex;
+    justify-content: space-around;
+    align-items:center;
+}

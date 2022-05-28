@@ -1,0 +1,119 @@
+//.collapseWrap {
+//    height       : 100%;
+//    width        : 100%;
+//    border       : 1px solid #eee;
+//    border-radius: 8px;
+//    padding      : 5px;
+//
+//    &.selecting {
+//        border: none !important;
+//    }
+//
+//    &.custom {
+//        padding: 5px 0;
+//    }
+//}
+//
+//.collapseHeader {
+//    padding      : 0 10px;
+//    font-size    : 16px;
+//    line-height  : 40px;
+//    height       : 30px;
+//    border-radius: 8px;
+//    position     : relative;
+//}
+//
+//.collapseBody {
+//    display      : flex;
+//    flex-wrap    : wrap;
+//    padding      : 20px 5px;
+//    overflow     : hidden;
+//    margin-top   : 10px;
+//    align-content: flex-start;
+//    align-items  : flex-start;
+//    transition   : all .3s ease-out;
+//
+//    &.show {
+//        background: #fff !important;
+//    }
+//
+//    &.show.border {
+//        border-top: 1px solid #eee;
+//    }
+//
+//    &.none {
+//        max-height: 0 !important;
+//    }
+//}
+//
+//.collapseIcon {
+//    cursor      : pointer;
+//    position    : absolute;
+//    right       : -3px;
+//    color       : #c6c6c6;
+//    font-size   : 15px;
+//    top         : 7px;
+//    transition  : all .3s ease-out;
+//    margin-right: 10px;
+//
+//    &.none {
+//        transform: rotateZ(90deg);
+//    }
+//}
+//
+///* tile uploaded pictures */
+//.upload-list-inline .ant-upload-list-item {
+//    float       : left;
+//    width       : 200px;
+//    margin-right: 8px;
+//}
+//
+//.upload-list-inline .ant-upload-animate-enter {
+//    animation-name: uploadAnimateInlineIn;
+//}
+//
+//.upload-list-inline .ant-upload-animate-leave {
+//    animation-name: uploadAnimateInlineOut;
+//}
+//
+:global {
+  .upload-list-inline {
+    .ant-upload-list-picture {
+      display: none;
+    }
+    width: 100%;
+    .ant-upload-select-picture {
+      width: 100%;
+      height: 50px;
+      .ant-btn {
+        width: 550px;
+        height: 50px;
+        margin: 0 auto;
+      }
+    }
+    .pictureList {
+      margin-top: 20px;
+      border: 1px solid #e2e2e2;
+      height: 200px;
+      border-radius: 5px;
+      background: #fcfcfc;
+      justify-content: center;
+      display: flex;
+      .pictureChild {
+        width: 200px;
+        height: 100%;
+        padding: 40px 0;
+        text-align: center;
+        > div {
+          border: 1px #ccc solid;
+          box-sizing: border-box;
+          border-radius: 5px;
+          padding: 2px;
+          width: 100px;
+          margin: 0 auto
+        }
+      }
+    }
+  }
+}
+

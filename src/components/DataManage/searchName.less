@@ -1,0 +1,45 @@
+.container{
+    // position:absolute;
+    z-index:100;
+    right:0;
+    width:200px;
+    height:200px;
+    background-color: #fff;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    background-clip: padding-box;
+    .serachInput{
+        width:100%;
+        height:30px;
+        border:none;
+        padding-left:30px;
+        border-bottom:1px solid #E9E9E9;
+        background:url("./search.png") no-repeat 5px 6px;
+        background-size:16px;
+    }
+    .checkboxContainer{
+        height:calc(100% - 30px);
+        overflow-y:auto;
+        .checkBox{
+            width:100%;
+            height:30px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            color: #333;
+            cursor: pointer;
+            padding: 0 4px;
+            margin:0;
+            text-align:left;
+            vertical-align:top;
+            &.allCheckBox{
+                color:var(--PC);
+            }
+            &.checkboxTitle{
+                color:#3F80AE;
+            }
+        }
+    }
+    
+}

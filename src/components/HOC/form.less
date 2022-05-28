@@ -1,0 +1,129 @@
+:global{
+    .ant-checkbox-wrapper + .ant-checkbox-wrapper{margin:0}
+    .ant-radio-group{
+        line-height: initial!important;
+    }
+    //重写antd--tabs
+    .ant-tabs-bar{
+        margin:  0;
+    }
+    .ant-tabs-top-content,.ant-tabs-bottom-content{
+        background: #fff
+    }
+    .tabSelecting{
+        border:none!important;
+    }
+}
+.DropTarget{
+    padding: 20px 10px 150px;
+    width: 100%;
+    min-height: 100%;
+
+    flex-wrap: wrap;
+    align-content: flex-start;
+    align-items: flex-start;
+    :global{
+        .ant-input-group-wrapper{
+            vertical-align: middle;
+            margin-top:-3px;
+        }
+    }
+}
+// :global(.ant-card-body){
+//     display: flex;
+//     flex-wrap: wrap;
+//     align-content: flex-start;
+//     align-items: flex-start;
+// }
+// :global(.sortDrop .ant-tabs-tabpane){
+//     display: flex;
+//     flex-wrap: wrap;
+//     align-content: flex-start;
+//     align-items: flex-start;
+// }
+.leftFrame{
+    width: 50%;
+    padding: 4px;
+}
+.leftControl{
+    height: 33px;
+    line-height: 33px;
+    padding-left: 6px;
+    font-size: 12px;
+    border: 1px solid #fff;
+    overflow: hidden;
+    background:#ebf3fb;
+    cursor: pointer;
+    i{
+        padding-right: 4px;
+    }
+}
+ .leftControl:hover{
+    border: 1px dashed  rgb(219, 219, 219);
+    color: #108ee9;
+}
+.leftControl:hover .leftIcon{
+    color: #108ee9;
+}
+.leftIcon{
+  color: #7EC2F3;
+
+}
+.subToolBar{
+    position: absolute;
+    display: flex;
+    right: 5px;
+    top: 5px;
+}
+.toolBar{
+    position: absolute;
+    display: flex;
+    right: 0px;
+    top: -13px;
+    z-index: 100;
+}
+.subToolBar>.toolItem,.toolBar>.toolItem{
+    cursor: pointer;
+    background: #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 26px;
+    height:28px;
+    width: 28px;
+    border: 1px solid rgb(219, 219, 219);
+    -webkit-box-shadow: 0 2px 4px 0 rgba(163,163,163,.5);
+    box-shadow: 0 2px 4px 0 rgba(163,163,163,.5);
+}
+.SortDrop{
+    position: relative;
+    // padding: 10px;
+}
+.FormItem{
+    cursor: pointer;
+    position: relative;
+    height: 100%;
+    //border-radius: 5px;
+    transition: all 0.3s;
+    //margin:5px;
+}
+.SubItem{
+    cursor: pointer;
+    position: relative;
+    padding: 10px;
+    transition: all 0.3s;
+}
+.FormItem:hover{
+    box-shadow:  0 0 5px #63A2FB;
+}
+.SubItem:hover{
+    box-shadow: inset 0 0 5px #63A2FB;
+}
+.FormItem.Selected{
+    box-shadow: 0 0 15px #5098FA;
+}
+.SubItem.Selected{
+    box-shadow:inset  0 0 8px #5098FA;
+}
+.FormItem.Selected:hover{
+    box-shadow:  0 0 15px #5098FA;
+}

@@ -1,0 +1,86 @@
+.footer{
+    position:relative;
+    display:flex;
+    align-items:center;
+    line-height:46px;
+    width:100%;
+    height:46px;
+    padding:0 1%;
+    background-color:#fff;
+    z-index:100;
+    .footerItem{
+            flex:1;
+            display:flex;
+            align-items:center;
+            .layout{
+                margin-right:4px;
+            }
+            &.footerItemSpecail{
+                flex:inherit;
+                flex-direction: row-reverse;
+                .footerPage{
+                    Button{
+                        width:30px;
+                        height:30px;
+                        padding:0;
+                        text-align:center;
+                    }
+                }
+                .footerPageNum{
+                    margin-right:10px;
+                    .num{
+                        display:inline-block;
+                        line-height:30px;
+                    }
+                    .line{
+                        display:inline-block;
+                        line-height:30px;
+                        padding:0 5px;
+                    }
+                }
+            }
+            .footerText{
+                margin-left:1%;
+            }
+    }
+}
+.modal{
+    position:relative;
+    .container{
+        .modalItem{
+            display:flex;
+            align-items:center;
+            height:60px;
+            border-bottom:1px solid rgb(232, 232, 232);
+            .itemLeft{
+                flex:1;
+                font-weight:bold;
+            }
+            .itemRight{
+                display:flex;
+                flex-direction: row-reverse;
+                align-items:center;
+                .opr{
+                    margin-right:10px;
+                }
+            }
+        }
+        .modalFooter{
+            position:absolute;
+            z-index:99;
+            bottom:0;
+            left:0;
+            display:flex;
+            align-items:center;
+            justify-content: center;
+            width:100%;
+            height:60px;
+            border-top: 1px solid #e8e8e8;
+            box-shadow: 0 0 12px 2px rgba(0,0,0,.1);
+            background-color: #fafbfc;
+            .btn{
+                margin-right:16px;
+            }
+        }
+    }
+}

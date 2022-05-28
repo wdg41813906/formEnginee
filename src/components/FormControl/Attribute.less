@@ -1,0 +1,129 @@
+
+:global{
+  //编辑器样式修改
+  .demo-wrapper{
+    background-color: white;
+  }
+  .demo-wrapper *{
+    box-sizing: content-box;
+  }
+  .demo-editor{
+    padding: 0 5px;
+  }
+  .rdw-editor-wrapper{
+    border: 1px solid #ddd;
+  }
+  .rdw-editor-toolbar{
+    background: #fafafa!important;
+  }
+  .rdw-editor-main{
+    min-height: 120px;
+  }
+  .rdw-colorpicker-modal{
+    left:-100px !important;
+    right:5px !important;
+    width: 220px!important;
+  }
+  .rdw-link-modal{
+    left: -105px!important;
+    width: 200px!important;
+    height: 220px!important;
+  }
+  .public-DraftStyleDefault-block{
+    margin: 0!important;
+  }
+  .rdw-inline-dropdown,.rdw-text-align-dropdown,.rdw-link-dropdown,.rdw-history-dropdown,.rdw-fontsize-dropdown{
+    width: 30px!important;
+    min-width: 20px!important;
+    margin: 0!important;
+    // display: flex!important;
+    // justify-content: center!important;
+    // align-items: center!important;
+    .rdw-dropdown-carettoopen,.rdw-dropdown-carettoclose{
+      display: none;
+    }
+  }
+  .rdw-option-wrapper{
+    margin: 0!important;
+  }
+  .rdw-editor-toolbar{
+    flex-wrap: nowrap!important;
+  }
+  // .rdw-editor-toolbar>div{
+  //   flex: 1!important;
+  //   // transform: scale(.5);
+  //   // width: 20px!important;
+  // }
+}
+.attributeWrapper {
+  border-left: 1px solid #ccc;
+}
+
+.attrItem {
+  // padding-top: 5px;
+  // padding-bottom: 15px;
+  padding: 10px 0;
+  position: relative;
+}
+
+.attrItem::before {
+  content: " ";
+  position: absolute;
+
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  border-bottom: 1px solid #d9d9d9;
+  color: #d9d9d9;
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+  -webkit-transform: scaleY(1);
+  transform: scaleY(1);
+}
+
+.attrItem:last-child::before {
+  border-bottom: none;
+}
+
+.attrTitle {
+  height: 30px;
+  line-height: 30px;
+  display:flex;
+  justify-content: space-between
+}
+
+.attrTitle .attrTitleName {
+  font-weight: 700;
+  display: block;
+}
+
+.attrTitle button {
+  display: block;
+}
+
+.ControlWrapper {
+  padding: 10px;
+  margin: 0 auto;
+}
+
+.ctrTitle {
+  height: 25px;
+  line-height: 25px;
+  font-size: 14px;
+}
+
+.ctrDesc {
+  border-top: dashed 1px #979797;
+  font-size: 12px;
+  color: #777;
+}
+
+.ctrComponent {
+  width: 50%;
+  margin-top: 5px;
+}
+
+.ctrTitReq {
+  color: #d84636;
+  margin-left: 5px;
+}

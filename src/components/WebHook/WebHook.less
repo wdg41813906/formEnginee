@@ -1,0 +1,121 @@
+.dataSource{
+    margin: 0 10px;
+    height:100%;
+    table{
+        :global{
+            .ant-table-row:last-child td{
+                border-bottom: 1px solid #e8e8e8 !important;
+            }
+        }
+    }
+    .btn{
+        padding: 10px 0 0;
+        margin-bottom: 20px;
+    }
+    .btn button{
+        float: right;
+    }
+    // :global{
+    //     .ant-pagination{
+    //         margin-top:20px;
+    //     }
+    //     .ant-table-pagination.ant-pagination{
+    //         float: left;
+    //         width: 100%;
+    //     }
+    //     .ant-pagination-total-text{
+    //         float: right;
+    //     }
+    // }
+    a{
+        cursor: pointer;
+    }
+}
+.dataSourceoperating{
+    button{
+        margin: 7px 5px auto;
+        &:first-child{
+            background: #1990ff;
+            border-color: #1990ff;
+            color:white;
+        }
+    }
+    .check,.check:hover,.check.active,.check:focus{
+        background: #87d068;
+        border-color: #87d068;
+        color:white;
+    }
+}
+.form{
+    .params{
+        margin-bottom: 0;
+        :global{
+            .ant-col,.ant-form-item-children,.ant-checkbox-wrapper,.ant-row{
+                float:left;
+            }
+            .ant-form-item-control-wrapper{
+                margin-right:15px;
+            }
+            .ant-row{
+                margin-bottom: 0;
+                padding-bottom: 0;
+            }
+            .ant-form-item{
+                margin: 0 !important;
+            }
+           
+        }
+    }
+    
+    .url_main{
+        background: #fbfbfb;
+        border: 1px solid #e8e8e8;
+        width: 100%;
+        margin-bottom: 15px;
+        .urlStyle{
+            padding: 5px 10px;
+            border-bottom: 1px solid #e8e8e8;
+            width: 100%;
+            position: relative;
+            .del_btn{
+                height: 0;
+                line-height: 0;
+                position: absolute;
+                right:10px;
+                top:18px;
+                font-size: 16px;
+            }
+        }
+        .params_main{
+            padding: 0 10px 10px;
+            background: white;
+            .returnKey{
+                line-height: 22px;
+                height: 22px;
+                overflow: hidden;
+                display: block;
+                word-break: break-all;
+            }
+        }
+    }
+   
+}
+.addoptional{
+    float: right;
+    color: #1e92ff;
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+// ::-webkit-scrollbar {
+//     width: 3px;
+//     height: 3px;  
+//     background-color: #ddd;
+// }
+// ::-webkit-scrollbar-thumb {
+//     background-color: #ddd;
+// }
+// ::-webkit-scrollbar-thumb:hover {
+//     background: #ddd
+// }

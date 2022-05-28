@@ -1,0 +1,89 @@
+.btns{
+    display:flex;
+    align-items:center;
+    height:50px;
+    background-color:#DFE9F5;
+    margin-bottom:20px;
+    &>div{
+        padding:4px 6px;
+        border:1px solid #aaa;
+        border-radius:4px;
+        margin-right:4px;
+        cursor: pointer;
+        &.specialItem{
+            color:#fff;
+            background-color:#418FD4;
+            margin-left:4px;
+        }
+    }
+}
+.editSpecial{
+    display:flex;
+    align-items:center;
+    .avator{
+        width:100px;
+        text-align:right;
+        vertical-align: middle;
+        .uploadUser{
+            width:60px;
+            height:60px;
+            border:1px solid #ddd;
+            display:inline-block;
+            position:relative;
+            cursor: pointer;
+            .userIcon{
+                position: absolute;
+                top:50%;
+                left:50%;
+                transform: translate(-50%,-50%);
+                font-size:40px;
+            }
+        }
+    }
+    .editContent{
+        margin-left:20px;
+    }
+}
+.input{
+    width:380px;
+    margin:0;
+    display:inline-block;
+}
+.generalItem{
+    display:flex;
+    align-items:center;
+    margin-top:10px;
+    &.bottomBorder{
+        padding-bottom:10px;
+        border-bottom:1px solid #ddd;
+    }
+    .itemLeft{
+        width:100px;
+        text-align:right;
+    }
+    .itemRight{
+        &.itemRightSpecial{
+            display:flex;
+            align-items:center;
+        }
+        margin-left:20px;
+        .parEdit{
+            display:flex;
+            align-items:center;
+            flex-wrap:wrap;
+            .parItem{
+                padding:2px 4px;
+                border:1px solid #E4E6E9;
+                border-radius:2px;
+                margin-right:10px;
+                .deleteItem{
+                    cursor: pointer;
+                }
+            }
+        }
+        .revise{
+            color:#0C4C7F;
+            cursor: pointer;
+        }
+    }
+}

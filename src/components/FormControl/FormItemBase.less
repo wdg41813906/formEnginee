@@ -1,0 +1,136 @@
+:global {
+  .ControlWrapper p {
+    margin: 0 !important;
+    word-break: break-word;
+  }
+  .upLoadDiv .ant-upload,
+  .upLoadDiv .ant-upload .ant-btn {
+    width: 100% !important;
+  }
+  div.ant-input-number-handler-wrap {
+    display: none;
+  }
+}
+
+.ControlWrapper {
+  padding: 1px 4px;
+  margin: 0 auto;
+  position: relative;
+  > .Title {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    line-height: 16px;
+    max-height: 48px;
+    overflow: hidden;
+    margin-right: 2px;
+    font-size: 13px;
+    width: 111px;
+    word-break: break-all;
+
+    .name {
+      position: relative;
+      text-align: right;
+      margin-right: 5px;
+
+      &.HrLine::before {
+        position: absolute;
+        content: "";
+        width: 4px;
+        height: 100%;
+        left: -8px;
+        background: #1890ff;
+      }
+    }
+
+    > .Required {
+      color: #d84636;
+      margin-right: 5px;
+    }
+
+    &.vertical {
+      display: block;
+      margin-bottom: 5px;
+      width: auto;
+    }
+  }
+
+  > .Component {
+    flex: 1;
+    overflow: hidden;
+
+  }
+
+  > .Component.right {
+    :global {
+      input,
+      textarea,
+      .ant-cascader-picker-label {
+        text-align: right;
+        padding-right: 10px;
+      }
+
+      .ant-form-item-control {
+        text-align: right;
+      }
+
+      .ant-calendar-picker-input {
+        padding-right: 30px;
+      }
+    }
+  }
+
+  .Des {
+    padding: 0 2px;
+    color: rgb(16, 142, 233);
+
+    &:hover {
+      color: #65B6EF;
+    }
+  }
+
+  > .Mask {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+  }
+}
+
+.Model {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.hidden {
+  display: none;
+}
+
+.gray {
+  background: #eee;
+  opacity: .6;
+  cursor: not-allowed;
+}
+
+.loading {
+  width: 100%;
+}
+
+.tip {
+  :global {
+    .ant-tooltip-inner {
+      background-color: white;
+      color: #f5222d;
+    }
+
+    .ant-tooltip-arrow:before {
+      background-color: white;
+    }
+  }
+}

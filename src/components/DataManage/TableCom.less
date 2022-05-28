@@ -1,0 +1,165 @@
+.contentTable {
+  width: 100%;
+  // .rowHover{
+  //     cursor: pointer;
+  // }
+  .rowEven {
+    background-color: #FCFCFD;
+  }
+  .hoverId {
+    background-color: #E6F7FF !important;
+  }
+  .rowHeight {
+    height: 41px !important;
+  }
+  :global .ant-table-tbody > tr > td {
+    padding: 10px 8px !important;
+  }
+  :global .ant-table-row {
+    border: 1px red solid !important;
+    height: 28px !important;
+  }
+  :global tr.ant-table-expanded-row {
+    & > td:last-child {
+      padding: 10px 0 !important;
+      .ant-table-header {
+        background: #edf4ff !important;
+      }
+    }
+    & > td:first-child {
+      border-right: none !important;
+    }
+  }
+  :global .ant-spin-nested-loading {
+    height: 100%;
+    .ant-spin-container {
+      height: 100%;
+      .ant-table {
+        height: 100%;
+        /* td{
+            // text-align:center;
+            // white-space: nowrap;
+            // text-overflow: ellipsis;
+            // overflow:hidden;
+            // font-size:12px;
+        } */
+        th {
+          text-align: center;
+          // white-space: nowrap;
+          height: 41px;
+          // font-size:12px;
+          //font-weight:700;
+          div {
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
+        }
+        .ant-table-content {
+          height: 100%;
+          .ant-table-scroll {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            .ant-table-body {
+              flex: 1;
+              overflow: auto !important;
+            }
+          }
+          .ant-table-fixed-left {
+            // height:100%;
+            .ant-table-body-outer {
+              height: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+  :global .ant-table-small.ant-table-bordered {
+    .ant-table-thead > tr > th:last-child, .ant-table-small.ant-table-bordered .ant-table-tbody > tr > td:last-child {
+      border-right: 1px solid #e8e8e8 !important;
+      //height: 41px !important;
+    }
+  }
+  :global .ant-table-small {
+    & > .ant-table-content > .ant-table-header > table, & > .ant-table-content > .ant-table-body > table, & > .ant-table-content > .ant-table-scroll > .ant-table-header > table, & > .ant-table-content > .ant-table-scroll > .ant-table-body > table, & > .ant-table-content > .ant-table-fixed-left > .ant-table-header > table, & > .ant-table-content > .ant-table-fixed-right > .ant-table-header > table, & > .ant-table-content > .ant-table-fixed-left > .ant-table-body-outer > .ant-table-body-inner > table, & > .ant-table-content > .ant-table-fixed-right > .ant-table-body-outer > .ant-table-body-inner > table {
+      table-layout: fixed;
+    }
+  }
+  // :global .react-resizable {
+  //     position: relative;
+  //     overflow:hidden;
+  //     text-overflow:ellipsis;
+  // }
+
+  // :global .react-resizable-handle {
+  //     position: absolute;
+  //     width: 10px;
+  //     height: 100%;
+  //     bottom: 0;
+  //     right: -5px;
+  //     cursor: col-resize;
+  // }
+  // :global .ant-table-small > .ant-table-content .ant-table-header{
+  //     margin-bottom: -3px !important;
+  // }
+}
+
+.textShow {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+  white-space: nowrap;
+}
+
+.styleTd {
+  overflow-wrap: break-word;
+  &.numStyle {
+    text-align: right;
+  }
+  font-size: 12px;
+}
+
+.configContianer {
+  position: relative;
+  font-size: 12px;
+  font-weight: 700 !important;
+  .configSort {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    color: rgba(0, 0, 0, 0.3);
+    font-size: 0.85em;
+    .sortActive {
+      color: #1890ff;
+    }
+  }
+  .layout {
+    display: none !important;
+    position: absolute;
+    z-index: 100;
+    top: 50%;
+    left: .4em;
+    width: 12px;
+    transform: translateY(-50%);
+    i {
+      display: block;
+      margin-top: 4px;
+      font-size: 12px;
+      opacity: .5;
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+  &:hover .layout {
+    display: block !important;
+  }
+}
+
+.smallSize {
+  font-size: 20px;
+}

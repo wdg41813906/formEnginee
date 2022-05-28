@@ -1,0 +1,92 @@
+.ruleItem {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  margin-bottom: 10px;
+  &:hover {
+    .ruleMain {
+      .setting {
+        &.settingSpecial {
+          display: block;
+        }
+      }
+    }
+  }
+  .ruleMain {
+    padding-left: 12px;
+    position: relative;
+    display: flex;
+    width: 80%;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+    .setting {
+      position: absolute;
+      z-index: 99;
+      right: 2px;
+      top: 50%;
+      transform: translateY(-50%);
+      display: none;
+    }
+    .ruleTitle {
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      color: #1890ff;
+    }
+    .ruleInput {
+      border: none;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      &:focus {
+        border: none !important;
+        box-shadow: 1px 1px transparent;
+      }
+      &.cursorInput {
+        cursor: pointer;
+      }
+      &.activeSetting {
+        padding-right: 16px;
+      }
+    }
+  }
+  .ruleOperate {
+    display: flex;
+    width: 10%;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+}
+
+.configItem {
+  margin-bottom: 20px;
+  .note {
+    font-size: 12px;
+    color: #C3CDDA;
+  }
+}
+
+.preview {
+  line-height: 20px;
+  color: #1890ff;
+  .previewCotent {
+    color: #000;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+
+  }
+}
+
+:global {
+  .ant-dropdown-menu-submenu-popup > .ant-dropdown-menu {
+    max-height: 250px;
+    overflow-y: auto;
+  }
+}
+
+
+
+
+

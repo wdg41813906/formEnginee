@@ -1,0 +1,29 @@
+@primary-color: #1990ff;
+
+.container {
+    flex: 1;
+
+    .proSelect {
+        margin: 0 10px;
+    }
+
+    .search {
+        &.searchIconActive {
+            color: @primary-color;
+        }
+
+        background-color :#F5F5F5;
+        display          : inline-block;
+        line-height      : 34px;
+        padding          : 0 15px;
+        cursor           : pointer;
+
+        .searchIcon {
+            margin-right: .3em;
+        }
+    }
+
+    .opr {
+        margin-left: 10px;
+    }
+}

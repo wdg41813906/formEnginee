@@ -1,0 +1,32 @@
+.modal {
+    :global .ant-modal {
+        max-width: 85%;
+        top      : 5%;
+        height   : 90%;
+
+        .ant-modal-body {
+            padding : 5px;
+            flex    : 1;
+            overflow: auto;
+        }
+
+        .ant-table-pagination.ant-pagination {
+            margin: 10px 0;
+        }
+
+        .ant-modal-content {
+            max-height: 100%;
+            display   : flex;
+            flex-flow : column;
+
+            >.ant-modal-body {
+                flex: 1;
+            }
+        }
+
+    }
+}
+
+.filterItem {
+    display: flex;
+}

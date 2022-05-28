@@ -1,0 +1,27 @@
+/* Increase grid spacing of 16px  */
+.content{
+    padding: 6px;
+    box-sizing: border-box;
+    overflow: auto;
+    height: 100%;
+    .card{
+        width:90%;
+        margin: 0 auto 20px;
+        cursor: pointer;
+        transition: all .3s;
+        &:hover{
+            // background:rgba(33, 145, 250, 0.3);
+            box-shadow: 0 0 12px 0 var(--PC);
+        }
+        :global(.ant-card-body){
+            height: 124px;
+            overflow: hidden;
+        }
+        .add{
+            width: 100%;
+            font-size: 60px;
+            text-align: center;
+            color: #ddd;
+        }
+    }
+}

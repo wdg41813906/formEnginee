@@ -1,0 +1,130 @@
+:global {
+  #Boots {
+    .saveStatus {
+      .ant-spin-nested-loading {
+        height: 0;
+      }
+    }
+    .ant-alert {
+      padding: 0;
+      border: none;
+    }
+  }
+  .ControlTab .ant-tabs-ink-bar {
+    height: 3px;
+  }
+  .ControlTab .ant-tabs-bar {
+    text-align: center;
+  }
+  .ant-tabs-content.ant-tabs-content-animated.ant-tabs-top-content.ant-tabs-card-content,
+  .ant-tabs-content.ant-tabs-content-animated.ant-tabs-top-content {
+    height: 100%;
+  }
+  .ControlTab .ant-tabs-nav-scroll {
+    text-align: left;
+  }
+}
+
+.header {
+  position: relative;
+  height: 5px;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(99, 99, 99, 0.15);
+  box-shadow: 0 2px 5px 0 rgba(99, 99, 99, 0.15);
+}
+
+.footer {
+  border-top: 1px solid #ccc;
+}
+
+.FormWrapper {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  overflow: auto;
+}
+
+.ControlContent_card {
+  .ControlContentCard_header {
+    padding-left: 10px;
+    margin: 5px 0 0 0;
+    line-height: 32px;
+  }
+  .ControlContentCard_body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+// .ControlItem{
+//     display: flex;
+//     flex-wrap: wrap;
+//     justify-content: space-between;
+
+// }
+.ControlContent {
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  overflow: auto;
+}
+
+.designTab {
+  overflow: auto;
+  display: flex;
+  height: 100%;
+  > div {
+    overflow: auto;
+    padding: 0 10px;
+    border-right: 1px solid #ccc;
+  }
+}
+
+:global {
+  .formTab {
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    border-bottom: 1px solid #ccc;
+    & > div.ant-tabs-content.ant-tabs-content-animated.ant-tabs-top-content {
+      height: 0;
+      flex: 1;
+    }
+  }
+}
+
+.optionWrap {
+  border-bottom: 1px solid #ccc;
+}
+
+.Hoverinput {
+  height: 25px;
+  border: none;
+  border-bottom: 1px dashed #aaaaaa;
+  font-size: 14px;
+  padding-left: 6px;
+  outline: none;
+}
+
+.Hoverinput::placeholder {
+  color: #ddd;
+}
+
+.grayIcon {
+  line-height: 24px;
+  height: 25px;
+  cursor: pointer;
+  width: 25px;
+  font-size: 16px;
+  background: #ccc;
+  color: #fff;
+  text-align: center;
+  border-radius: 50%;
+}

@@ -1,0 +1,119 @@
+.inlineBlock{
+    display:inline-block;
+    vertical-align:middle;
+}
+.filterContainer{
+    width: 100%;
+    &.filterContainerH{
+        display:flex;
+        padding:10px;
+        div.filterHeader{
+            line-height:normal;
+            margin-right:.5em;
+        }
+    }
+    padding:10px 20px 0px;
+    .filterHeader{
+        &:after{
+            content:"";
+            display:table;
+            clear:both;
+        }
+        line-height:30px;
+        .filterHeaderDes{
+            white-space: nowrap;
+            overflow:hidden;
+            text-overflow: ellipsis;
+            .filterTitle{
+                &.filterTItleH{
+                    margin-right:.5em;
+                }
+                max-width:150px;
+                white-space: nowrap;
+                overflow:hidden;
+                text-overflow: ellipsis;
+            }
+            .filterCompare{
+                // height:30px;
+                // line-height:30px;
+                vertical-align: middle;
+            }
+            :global{
+                .ant-select-selection--single{
+                    height: 26px;
+                }
+                .ant-select-selection__rendered{
+                    line-height: 26px;
+                }
+            }
+        }
+        .filterIcon{
+            font-size:16px;
+            float:right;
+            line-height:34px;
+            color:rgba(0, 0, 0, 0.65);
+            margin-top:5px;
+            cursor: pointer;
+        }
+    }
+    .filterContent{
+        &.filterContentH{
+            width:auto;
+        }
+        .filterItem{
+            width:100%;
+            margin-bottom:0;
+            &.filterItemH{
+                margin-right:.5em;
+                width:auto;
+            }
+            &.filterItemSelect{
+                // border: 1px solid #d9d9d9;
+                // border-radius: 4px;
+            }
+        }
+        .filterNumRange{
+            width:100%;
+            display:flex;
+            &>div{
+                // line-height:36px;
+                color:#000;
+            }
+            .filterNumRangeItem{
+                flex:1;
+            }
+        }
+        .filterLocation{
+            display:flex;
+            width:100%;
+            flex-wrap:nowrap;
+            .filterLocationItem{
+                flex:1;
+                &.filterItemSelect{
+                    /* border: 1px solid #d9d9d9;
+                    border-radius: 4px; */
+                }
+                &:not(:last-child){
+                    margin-right:4px;
+                }
+            }
+        }
+    }
+}
+.horizonContainer{
+    display:flex;
+    flex-wrap:wrap;
+}
+
+.businessRuleContainer{
+    width: 95%;
+    position: relative;
+}
+
+.businessRuleDel{
+    position: absolute;
+    right: 0;
+    top: 13px;
+    font-size: 18px;
+    color: #1990ff !important;
+}

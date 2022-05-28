@@ -1,0 +1,133 @@
+@mainColor:#1990ff;
+.line{
+    position:absolute;
+    content:"";
+    width:80px;
+    border-top:2px dashed #ddd;
+    height:0;
+    top:53%;
+}
+.left{
+    .line();
+    left:0;
+}
+.right{
+    .line();
+    right:0;
+}
+.procedure{
+    height:60px;
+    .progress{
+        position:relative;
+        display:inline-block;
+        vertical-align: middle;
+        height:60px;
+        width:185px;
+        text-align:center;
+        line-height:60px;
+        &.progressLeft{
+            &::before{
+                .left();
+            }
+        }
+        &.progressRight{
+            &::after{
+               .right();
+            }
+        }
+        &.progressActive{
+            .desText{
+                color:@mainColor;
+                font-size:14px;
+            }
+            .description{
+                width:20px;
+                height:20px;
+                background-color:@mainColor;
+                line-height:20px;
+            }
+        }
+        &.progressRightActive{
+            &.progressRight{
+                &::after{
+                    border-color:@mainColor;
+                }
+            }
+        }
+        &.progressLeftActive{
+            &.progressLeft{
+                &::before{
+                    border-color:@mainColor;
+                }
+            }
+        }
+        .description{
+            display:inline-block;
+            vertical-align:middle;
+            width:10px;
+            height:10px;
+            border-radius:50%;
+            background-color:#ddd;
+            color:#fff;
+            text-align:center;
+        }
+        .desText{
+            position:absolute;
+            left:50%;
+            top:80%;
+            transform: translate(-50%,-50%);
+            font-size:12px;
+            color:#000;
+        }
+    }
+}
+.stepsFinish{
+    display:flex;
+    width:100%;
+    height:250px;
+    align-items:center;
+    text-align:center;
+    .finishContainer{
+        margin:auto;
+        .finishIcon{
+            width:80px;
+            height:80px;
+            border-radius:50%;
+            line-height:80px;
+            color:#fff;
+            margin:30px auto;
+            font-size:40px;
+            &.success{
+                background-color:@mainColor;
+            }
+            &.fail{
+                background-color:#EA2000;
+            }
+        }
+    }
+}
+.procedureBtn{
+    display:flex;
+    flex-direction: row-reverse;
+    align-items:center;
+    line-height:40px;
+    margin-top:10px;
+    div{
+        width:90px;
+        height:36px;
+        margin-left:10px;
+        line-height:36px;
+        text-align:center;
+        cursor:pointer;
+        &.prev{
+            border:1px solid #ddd;
+            border-radius:6px;
+            color:#000;
+            background-color:#fff;
+        }
+        &.next{
+            background-color:@mainColor;
+            color:#fff;
+        }
+    }
+}

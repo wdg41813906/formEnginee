@@ -1,0 +1,145 @@
+.ctr {
+  :global {
+    .ant-modal-wrap {
+      position: absolute !important;
+    }
+
+    .ant-modal {
+      height: 100% !important;
+    }
+
+    .previewModal {
+      top           : 0 !important;
+      padding-bottom: 0 !important;
+      overflow      : auto;
+    }
+
+    .previewModal .ant-modal-content {
+      height: 100%;
+    }
+
+    .previewModal .ant-modal-title {
+      color     : #fff;
+      text-align: center;
+    }
+
+    .previewModal .ant-modal-body {
+      padding   : 0 !important;
+      height    : 100%;
+      background: #efefef !important;
+    }
+
+    .previewModal .ant-modal-close-x {
+      color: #fff;
+    }
+  }
+
+  .container {
+    //display : flex;//此处记住
+    //position:relative;
+    height    : 100%;
+
+    .left {
+      height: 100%;
+
+      //flex: 7;//此处记住
+      .header {
+        display         : flex;
+        align-items     : center;
+        width           : 100%;
+        background-color: #f3f7f7;
+
+        .headerEidit {
+          display    : flex;
+          align-items: center;
+
+          .headerItem {
+            padding: 4px 14px;
+            color  : #000;
+            margin : 4px 10px 4px 0;
+            cursor : pointer;
+
+            &.headerItemActive {
+              background-color: #D8EBFD;
+              border-radius   : 20px;
+            }
+
+            .headerIcon {
+              color: var(--PC);
+            }
+
+            .headerText {
+              margin-left: 4px;
+            }
+          }
+        }
+
+        .headerPage {
+          flex          : 1;
+          flex-direction: row-reverse;
+          display       : flex;
+          align-items   : center;
+
+          &>div {
+            margin-right: 10px;
+          }
+        }
+      }
+
+      .content {
+        width     : 100%;
+        overflow-y: auto;
+        height    : 100%;
+        //&.editHeight {
+        //  max-height: 580px;
+        //}
+        //&.normalHeight {
+        //  max-height: 590px;
+        //}
+      }
+
+      .footer {
+        display    : flex;
+        align-items: center;
+        padding    : 10px 0;
+        border-top : 1px dashed #ddd;
+
+        .footerBtn {
+          margin-right    : 20px;
+          color           : #fff;
+          background-color: var(--PC);
+        }
+      }
+    }
+
+    .right {
+      flex    : 3;
+      padding : 0 6px;
+      position: relative;
+
+      .rightContainer {
+        position: relative;
+
+        .procedureImg {
+          position     : absolute;
+          top          : 7px;
+          right        : 0;
+          padding      : 4px 6px;
+          border-radius: 5px;
+          border       : 1px solid #ddd;
+        }
+
+        .rightTabs {
+          height: 100%;
+        }
+      }
+
+    }
+  }
+
+  .eidtModal {
+    position: absolute;
+    width   : 100%;
+    height  : 100%;
+  }
+}

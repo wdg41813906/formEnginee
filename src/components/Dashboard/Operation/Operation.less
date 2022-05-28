@@ -1,0 +1,47 @@
+.cooperate{
+    display:flex;
+    height:30px;
+    line-height:30px;
+    align-items:center;
+    position:fixed;
+    width:  86%;
+    margin:10px 0;
+    font-size:12px;
+    .cooperateLeft{
+        flex:6;
+        display:flex;
+        align-items:center;
+        .cooperateItem{
+            width:10%;
+            text-align:center;
+            margin-left:2%;
+            cursor: pointer;
+            &.cooperateSpecial{
+                background-color:#1890ff;
+                color:#fff;
+            }
+            .cooperateText{
+                padding-left:5px;
+            }
+        }
+    }
+    .cooperateRight{
+         flex:4;
+         display:flex;
+         align-items:center;
+         flex-direction:row-reverse;
+         .cooperateItem{
+             width:14%;
+             text-align:center;
+             margin-right:2%;
+             cursor: pointer;
+             &.cooperateSpecial{
+                background-color:#1890ff;
+                color:#fff;
+            }
+             .cooperateText{
+                 padding-left:5px;
+             }
+         }
+    }
+}

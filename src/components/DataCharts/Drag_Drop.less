@@ -1,0 +1,91 @@
+.disHover {
+  width: 100%;
+  cursor: move;
+  text-align: left;
+  //padding-left: 5px;
+  line-height: 32px;
+  margin: 4px auto;
+  font-size: 12px;
+  //background: #EBF2FA;
+}
+
+.disHover:hover {
+  background: var(--PC);
+}
+
+.DropTargetContainer {
+  width: 100%;
+  height: auto;
+  border: 0.5px #e3e3e3 dashed;
+  background: #fff;
+  margin-top: 6px;
+  display: flex;
+  padding-left: 6px;
+}
+
+.DropTargetContainer .DragItems {
+  //background: var(--PC);
+  border-radius: 24px;
+  padding: 0 8px 0 2px;
+  height: 24px;
+  font-size: 14px;
+  font-family: "Helvetica Neue", "PingFang SC", "Hiragino Sans", serif;
+  line-height: 24px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.DropTargetContainer .DragItems a {
+  padding: 0 6px;
+}
+
+.DropTargetContainer:first-child {
+  margin-top: 0;
+}
+
+//PropertyOptions.js
+:global {
+  .PropertyOptions .ant-card-body {
+    padding: 2px !important;
+    background: #F4F6F9;
+    border-bottom: 1px #E3E3E3 solid;
+  }
+  .PropertyOptions .ant-card-small > .ant-card-head {
+    padding: 0 4px
+  }
+}
+
+.CardGrid {
+  width: 70px;
+  height: 70px;
+  cursor: pointer;
+  margin: 3px;
+  background-repeat: no-repeat;
+  background-size: 576px 144px;
+
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+:global {
+  .PropertyOptions .ant-card-grid {
+    box-shadow: none;
+  }
+  .ant-card-bordered {
+    border: none !important;
+  }
+}
+
+.CheckChart {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15) !important;
+}
+
+.unCheckChart {
+  box-shadow: none
+}
+
+
+
+

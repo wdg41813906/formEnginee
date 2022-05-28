@@ -1,0 +1,160 @@
+.SubFormHeader {
+  position: relative;
+}
+
+.dataTitle {
+  text-align: center;
+  padding: 4px 0;
+  border: 1px solid transparent;
+}
+
+.Required {
+  color: #d84636;
+  margin-left: 5px;
+}
+
+.previewRequired {
+  color: #d84636;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+.selected {
+  border: 1px dashed #40a9ff;
+}
+
+.op {
+  text-align: left;
+
+  > a:last-child {
+    margin-left: 10px;
+  }
+
+  > a {
+    font-size: 20px;
+  }
+}
+
+.hd {
+  text-align: center;
+}
+
+.subHd {
+  display: flex;
+
+  > .subNm {
+    flex: 1;
+  }
+
+  > .subBtns {
+    padding-right: 20px;
+    font-size: 20px;
+  }
+}
+
+.subHidden {
+  opacity: 0.5;
+  color: gray;
+}
+
+.valiErr {
+  color: red;
+}
+
+.numStyle {
+  text-align: right;
+}
+
+.deleteConfig {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+
+  .oper {
+    flex: 1;
+  }
+}
+
+.subStyles {
+  padding: 4px 16px !important;
+}
+
+// // 新增对于 表格样式的 修复
+// :global .ant-table-bordered.ant-table-fixed-header{
+//     .ant-table-body,.ant-table-header{
+//         table{
+//             table-layout: fixed !important;
+//         }
+//     }
+// }
+// :global .ant-table-scroll{
+//     overflow-y:hidden;
+// }
+// :global .ant-table-bordered.ant-table-fixed-header .ant-table-placeholder{
+//     position: relative;
+//     //top   :4px;
+// }
+// 留着
+/* .btnPanel{
+    position: absolute;
+    top     : 0px;
+    right   : 3px;
+    z-index : 9;
+} */
+.headerItem {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.cusTd {
+  position: relative;
+  padding: 4px 16px !important;
+  // white-space:nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.Des {
+  margin-left: 5px !important;
+  color: rgb(16, 142, 233) !important;
+
+  &:hover {
+    color: #65B6EF !important;
+  }
+}
+
+// new SubForm need!!
+.disbaled {
+  color: #ddd;
+  cursor: not-allowed;
+
+  &:hover {
+    color: #ddd;
+  }
+}
+
+.subForm {
+  :global .ant-table-tbody > tr > td {
+    padding: 6px 10px;
+    white-space: nowrap;
+  }
+}
+.editModalContent{
+  > div{
+    margin-bottom: 1em;
+  }
+  .itemCell{
+    margin-left: 84px;
+    td {
+      width: 200px;
+    }
+  }
+  .editModalTitle{
+    color:#666;
+    display:inline-block;
+    width:70px;
+    text-align:right;
+  }
+}

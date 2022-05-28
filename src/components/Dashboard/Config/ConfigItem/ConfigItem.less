@@ -1,0 +1,183 @@
+
+.attributeWrapper {
+    border-left: 1px solid #e8e8e8;
+  }
+  
+  .attrItem {
+    padding-top: 5px;
+    border-top: 1px solid #e8e8e8;
+    position: relative;
+    padding-left: 15px;
+   
+  }
+  .attrItem:first-child{
+    border-top: none;
+  }
+  
+  // .attrItem::before {
+  //   content: " ";
+  //   position: absolute;
+  
+  //   bottom: 0;
+  //   width: 100%;
+  //   height: 1px;
+  //   border-bottom: 1px solid #d9d9d9;
+  //   color: #d9d9d9;
+  //   -webkit-transform-origin: 0 0;
+  //   transform-origin: 0 0;
+  //   -webkit-transform: scaleY(1);
+  //   transform: scaleY(1);
+  // }
+  
+  .attrItem:last-child::before {
+    border-bottom: none;
+  }
+  
+  .attrTitle {
+    height: 40px;
+    line-height: 40px;
+    display:flex;
+    justify-content: space-between;
+    padding-left: 10px;
+    position: relative;
+    
+  }
+  .attrTitle::before{
+    content: " ";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    border-top: 1px solid #d9d9d9;
+    border-right: 1px solid #d9d9d9;
+    color: #d9d9d9;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+  }
+  .attrTitle::after{
+    content: " ";
+    position: absolute;
+    left: 0;
+    bottom: 8px;
+    width: 7px;
+    height: 24px;
+    border: none;
+    background: #1890ff;
+}
+
+
+  
+  .attrTitle .attrTitleName {
+    font-weight: 700;
+    display: block;
+  }
+  
+  .attrTitle button {
+    display: block;
+  }
+  
+  .ControlWrapper {
+    padding: 10px;
+    margin: 0 auto;
+  }
+  
+  .ctrTitle {
+    height: 25px;
+    line-height: 25px;
+    font-size: 14px;
+  }
+  
+  .ctrDesc {
+    border-top: dashed 1px #979797;
+    font-size: 12px;
+    color: #777;
+  }
+  
+  .ctrComponent {
+    width: 50%;
+    margin-top: 5px;
+  }
+  
+  .ctrTitReq {
+    color: #d84636;
+    margin-left: 5px;
+  }
+
+  
+  .item{
+    
+    height: 50px;
+    line-height: 50px;
+  }
+
+  .itemLeft{
+    width: 25%;
+    float: left;
+    font-family:Arial, Helvetica, sans-serif;// 'Microsoft YaHei';
+    font-size: 14px;
+    padding-left: 10px;
+  }
+  .itemRight{
+    float: right;
+    width: 75%;
+  }
+
+  .ColorInput{
+    margin: 8px 0;
+    font-family: "Chinese Quote", -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-variant: tabular-nums;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    list-style: none;
+    position: relative;
+    display: inline-block;
+    padding: 4px 11px;
+    width: 100%;
+    height: 32px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: rgba(0, 0, 0, 0.65);
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+   
+  }
+  .ColorIcon{
+    position: absolute;
+    top: 4px;
+    left: 4px;;
+width: 10%;
+width: 21px;
+height: 21px;
+border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  .ColorText{
+    width: 90%;
+  
+    text-align: center;
+  }
+
+  .imageWrap{
+   display: flex;
+   flex-flow: wrap;
+  }
+  .imageItem{
+    cursor: pointer;
+    position: relative;
+    background-size: 100%;
+height: 100px;
+width: 138px;
+margin-right: 10px;
+margin-bottom: 10px;
+  }
+  .imageItem:nth-child(2n){
+    margin-right: 0;
+  }

@@ -1,0 +1,52 @@
+.configWrap{
+  width: 100%;
+  height: 100%;
+}
+
+.configType{
+    width: 38px;
+    position: absolute;
+    left: 0;
+    height: 100%;
+    overflow: auto;
+    background: #F4F6F9;
+}
+.configContent{
+   // width: 100%;
+    height: 100%;
+    position: absolute;
+    right: 10px;
+    left: 38px;
+    overflow: auto;
+    padding-bottom: 50px;
+    //padding-left: 15px;
+}
+.typeItem{
+// height: 55px;
+font-family: "微软雅黑";
+font-size: 13px;
+line-height: 19px;
+padding-top: 6px;
+padding-bottom: 6px;
+text-align: center;
+position: relative;
+}
+.typeItem::after{
+    content: " ";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    border-top: 1px solid #d9d9d9;
+    border-right: 1px solid #d9d9d9;
+    color: #d9d9d9;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+}
+.typeItem.selected{
+    color: #fff;
+    background: #1890ff;
+}

@@ -1,0 +1,192 @@
+.dataSource {
+  margin: 0 10px;
+  height: 100%;
+  table {
+    :global {
+      .ant-table-row:last-child td {
+        border-bottom: 1px solid #e8e8e8 !important;
+      }
+    }
+  }
+  .btn {
+    padding: 10px 0 20px;
+  }
+  :global {
+    .ant-table-tbody > tr > td {
+      padding: 2px 8px !important;
+    }
+    .ant-table-thead > tr > th, .ant-table-tbody > tr > td{
+      padding: 2px 8px !important;
+    }
+    .ant-table-bordered .ant-table-thead > tr > th, .ant-table-bordered .ant-table-tbody > tr > td {
+      //border-right: 1px solid #e8e8e8 !important;
+      height: 28px !important;
+    }
+  }
+
+  .btn {
+    button, .cooperateItem {
+      float: right;
+      margin-right: 15px;
+    }
+  }
+  // :global{
+  //     .ant-pagination{
+  //         margin-top:20px;
+  //     }
+  //     .ant-table-pagination.ant-pagination{
+  //         float: left;
+  //         width: 100%;
+  //     }
+  //     .ant-pagination-total-text{
+  //         float: right;
+  //     }
+  // }
+  a {
+    cursor: pointer;
+  }
+}
+
+.dataSourceoperating {
+  button {
+    margin-right: 5px;
+    &:first-child {
+      background: #1990ff;
+      border-color: #1990ff;
+      color: white;
+    }
+  }
+  .check, .check:hover, .check.active, .check:focus {
+    background: #87d068;
+    border-color: #87d068;
+    color: white;
+  }
+}
+
+.form {
+  :global {
+    .ant-form-item-label {
+      padding-bottom: 5px;
+    }
+    .ant-form-item {
+      margin-bottom: 8px;
+    }
+
+  }
+  .params {
+    padding-top: 15px;
+
+    :global {
+      .ant-col, .ant-form-item-children, .ant-checkbox-wrapper, .ant-row {
+        float: left;
+      }
+      .ant-col {
+        margin-right: 10px;
+        line-height: 32px;
+      }
+      .ant-checkbox-wrapper {
+        margin-right: 5px;
+        line-height: 32px;
+      }
+      .ant-row {
+        margin-bottom: 0;
+        padding-bottom: 0;
+      }
+      .deleteIcon {
+        line-height: 32px;
+        position: absolute;
+      }
+    }
+    .webhookSelect {
+      clear: both;
+      color: #999;
+      margin-left: 10px;
+      word-break: break-all;
+    }
+  }
+}
+
+.optionalParams {
+  margin-bottom: 0 !important;
+}
+
+.addoptional {
+  float: right;
+  color: #1e92ff;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.extract {
+  :global {
+    .ant-tree {
+      min-height: 200px;
+      overflow-y: auto
+    }
+    .ant-tree li {
+      padding: 0;
+    }
+    .ant-input-number {
+      margin: 0 10px 15px 5px;
+    }
+    .ant-tree-checkbox-disabled {
+      display: none;
+    }
+  }
+  p {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  .preview {
+    max-height: 70px;
+    overflow-y: auto;
+    word-break: break-all;
+    padding-right: 7px;
+  }
+  .pfrist {
+    margin-top: 15px;
+  }
+  .previewFrist {
+    margin-bottom: 20px;
+  }
+  .option {
+    margin-top: 10px;
+    input, .formatSelect {
+      width: 100px;
+      margin: 0 10px 15px 5px;
+    }
+  }
+  .primary {
+    margin-top: 15px;
+    span {
+      font-weight: bold;
+    }
+  }
+}
+
+.previewdata {
+  .preview_table {
+    overflow: auto;
+    margin-bottom: 20px;
+  }
+  span {
+    font-size: 15px;
+    display: block;
+    margin-bottom: 8px;
+  }
+  table {
+    width: 100%;
+    tbody {
+      width: 100%;
+    }
+    th {
+      background: #fafafa;
+      padding: 16px 16px;
+    }
+    td {
+      padding: 10px 16px;
+      border-top: 1px solid #ddd;
+    }
+  }
+}

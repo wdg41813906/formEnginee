@@ -1,0 +1,34 @@
+.item{
+    display:flex;
+    width:100%;
+    align-items:center;
+    padding:20px 0;
+    border-bottom:1px solid #E0E0E0;
+    .leftItem{
+        width:180px;
+        align-self: start;
+    }
+    .rightModal{
+        font-size:12px;
+        color:#178CDF;
+        cursor: pointer;
+        .rightIcon{
+            margin-right:4px;
+        }
+    }
+    .switchModal{
+        font-size:12px;
+        .switchItem{
+            display:flex;
+            align-items:center;
+            &:not(:last-child){margin-bottom:10px;}
+            &>div:first-child{
+                width:150px;
+            }
+        }
+    }
+    .rightDes{
+        margin-top:10px;
+        font-size:12px;
+    }
+}

@@ -1,0 +1,49 @@
+.item{
+    height: 40px;
+    border-bottom:1px solid rgb(253, 230, 230);
+    padding:0 24px;
+    cursor: pointer;            
+    line-height: 40px;
+    text-align: left;
+    display: flex;
+    >div:first-child{
+        flex: 1;
+    }
+    >div:last-child{
+        width: 60px;
+        text-align: right;
+    }
+    .title{
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        word-break: break-all;
+    }
+}
+.item:last-child{
+    border-bottom: none;
+}
+.item:hover{
+    background-color: #F3FDFF;
+}
+.empty{
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #dadada;
+}
+.valueStr{
+    color: #1890ff;
+}
+.valueNum{
+    color: #52c41a;
+}
+.valueDateTime{
+    color:#F39C12;
+}
+.valueArray{
+    color:#A868C4;
+}
+.valueBool{
+    color:#FF2801;
+}

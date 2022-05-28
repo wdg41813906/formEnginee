@@ -1,0 +1,25 @@
+.item{
+    display:flex;
+    width:100%;
+    line-height:3.6em;
+    align-items:center;
+    border-bottom:1px solid rgba(0,0,0,.1);
+    &>div{
+        text-align:center;
+    }
+    &:hover:not(:first-child){
+        background-color:#E6F7FF;
+    }
+    .urlName{
+        flex:3;
+    }
+    .urlLoc{
+        flex:5;
+    }
+    .urlMethod{
+        flex:2;
+    }
+    &:last-child{
+        border:none;
+    }
+}

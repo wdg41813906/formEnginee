@@ -1,0 +1,64 @@
+.title{
+    font-size:14px;
+    font-weight:bold;
+    line-height:50px;
+    border-bottom:1px solid #ddd;
+}
+.memOper{
+    display:flex;
+    height:46px;
+    align-items:center;
+    .operItem{
+        padding:4px 6px;
+        border:1px solid #ddd;
+        border-radius:5px;
+        margin-right:4px;
+        cursor: pointer;
+    }
+}
+.mainContent{
+    .detailName{
+        padding:20px 0;
+        display:flex;
+        align-items:center;
+        border-bottom:1px solid #ddd;
+        .itemLeft{
+            width:68px;
+            margin-right:20px;
+            text-align:right;
+            img{
+                width:60px;
+                height:60px;
+            }
+        }
+        .name{
+            &>div{
+                line-height:30px;
+            }
+            &>div:first-child{
+                font-size:18px;
+                font-weight:bold;
+            }
+            &>div:last-child{
+                font-size:13px;
+            }
+        }
+    }
+    .item{
+        display:flex;
+        min-height:40px;
+        align-items:center;
+        &.itemBoder{
+            border-bottom:1px solid #ddd;
+        }
+        .itemLeft{
+            width:68px;
+            margin-right:20px;
+            text-align:right;
+            color:#787878;
+            &.itemsLeftSpecial{
+                align-self:flex-start;
+            }
+        }
+    }
+}

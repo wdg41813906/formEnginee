@@ -1,0 +1,54 @@
+.operate{
+    overflow: hidden;
+    border-bottom:1px solid #e8e8e8;
+    position: relative;
+    z-index: 99;
+    display: flex;
+    height: 44px;
+    align-items: center;
+}
+ .operate .left{
+     padding-left: 5px;
+     flex: 1;
+ }
+ .operate .right{
+     padding-right: 5px;
+     text-align: right;
+     display: flex;
+     justify-content: space-around;
+     button{
+        margin: 0 5px;
+     }
+ }
+ .btn{
+    width:60px;
+    height:26px;
+    line-height: 24px;
+    text-align: center;
+    border-radius:2px;
+    font-size: 12px;
+    font-family:MicrosoftYaHei;
+    font-weight:400;
+    cursor: pointer;
+    margin:0 10px;
+    &.btn_1{
+        color:rgba(136,136,136,1);
+        border:1px solid rgba(221,221,221,1);
+    }
+    &.btn_2{
+        background:rgba(80,152,250,1);
+        color:rgba(255,255,255,1);
+        border:1px solid rgba(80,152,250,1);
+    }
+    &.btn_3{
+        background:rgba(15,200,190,1);
+        color:rgba(255,255,255,1);
+        border:1px solid rgba(15,200,190,1);
+    }
+ }
+.input{
+    input{
+        height: 26px!important;
+        width: 300px!important;
+    }
+}

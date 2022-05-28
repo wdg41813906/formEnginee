@@ -1,0 +1,82 @@
+:global {
+  .ApprovalSteps {
+    width: 100%;
+    .ant-steps-vertical .ant-steps-item-description {
+      padding-bottom: 0 !important;
+    }
+    .ant-steps-vertical .ant-steps-item {
+      height: 62px;
+      line-height: 12px;
+    }
+    .ant-steps-vertical .ant-steps-item-icon {
+      margin-right: -2px;
+      line-height: 62px;
+    }
+    .ant-steps-vertical > .ant-steps-item > .ant-steps-item-tail {
+      position: absolute;
+      top: 22px;
+      left: 16px;
+      width: 1px;
+      height: 100%;
+      padding: 22px 0 6px;
+    }
+    .ant-card-small > .ant-card-head {
+      padding: 4px 12px;
+    }
+    .ant-collapse {
+      width: 100%;
+      border-radius: 8px !important;
+      > .ant-collapse-item {
+        border: none !important;
+        padding: 0 13px;
+      }
+    }
+    .ant-collapse-borderless {
+      margin-top: 8px;
+      > .ant-collapse-item > .ant-collapse-content {
+        padding: 0 12px 20px 12px;
+        border-top: 1px #eee solid !important;
+      }
+    }
+    .ant-collapse-borderless > .ant-collapse-item:last-child, .ant-collapse-borderless > .ant-collapse-item:last-child .ant-collapse-header {
+      font-size: 16px;
+      color: #697ad4;
+    }
+  }
+
+}
+
+.Popover {
+  line-height: 36px;
+  padding-left: 20px;
+  border: 1px #ddd solid;
+  border-radius: 5px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  min-width: 800px;
+  > div {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+
+.popover_arrow {
+  position: absolute;
+  display: block;
+  width: 8.5px;
+  height: 8.5px;
+  background: transparent;
+  border-style: solid;
+  border-width: 4.2px;
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+  left: 5px;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: #fff;
+  border-left-color: #fff;
+  box-shadow: -1px 1px 2px rgba(0, 0, 0, 0.17);
+
+}
